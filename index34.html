@@ -11,6 +11,14 @@
 				background:red  url('images.jpg')  top right no-repeat fixed;
 				margin:0;
 				}
+				#rmenu{
+					width:50px;
+					height:200px;
+					background:blue;
+					position:fixed;
+					right:0;
+					top:200px;
+					}
 				#mainarea{
 					width:1200px;
 					height:1500px;
@@ -44,19 +52,24 @@
 					background:blue;
 					}
 				#slidearea{
-					width:1000px;
-					height:200px;
+					width:1200px;
+					height:300px;
 					background:purple;
-					padding-left:100px;
-					padding-right:100px;
-					padding-top:50px;
-					padding-bottom:50px;
 					}
 				#slide1{
 					width:1000px;
 					height:200px;
 					background:orange;
 					float:left;
+					/*margin-left:100px;
+					margin-right:100px;
+					margin-top:50px;
+					margin-bottom:50px;
+					margin: 50px 100px 50px 100px;
+					margin: 50px 100px;*/
+					position:relative;
+					top:50px;
+					left:100px;
 					}
 				
 				#darea{
@@ -88,6 +101,7 @@
 					border-left-color:black;*/
 					border: solid 10px black;
 					}
+				
 				.bg1{
 					background:red;
 					}
@@ -100,44 +114,35 @@
 					height:300px;
 					background:voilet;
 					}
-				/*#box1{
-					width:300px;
-					height:150px;
-					background:#FFC702;
-					float:left;
-					margin:70px 20px 20px 50px;
-					margin:50px;
-					}
-				#box2{
-					width:300px;
-					height:150px;
-					background:#95E5F0;
-					float:left;
-					margin:70px 10px 20px 70px;
-					margin:50px;
-					}
-				#box3{
-					width:300px;
-					height:150px;
-					background:#03386D;
-					float:right;
-					margin:70px 50px 10px 30px;
-					margin:50px;
-					}*/
+				
 				.warea{
 					width:280px;
 					height:130px;
 					float:left;
 					margin:50px;
+					position:relative;
 					}
 				.warea img{
 					width:280px;
 					height:130px;
-					opacity:0.7;
 					}
-				.warea img:hover{
-					opacity:1;
+				.details{
+					display:none;
+				}
+				.warea:hover .details{
+					display:block;
+					position:absolute;
+					bottom:0;
+					width:100%;
+					text-align:center;
+					padding:10px 0;
+					/*background:linear-gradient(to top,black,rgba(0,0,0,0));*/
+					background:linear-gradient(to top,black,transparent);
+					color:white;
 					}
+				
+				
+				
 				.bg3{
 					background:pink;
 					}
@@ -215,6 +220,9 @@
 		
 	</head>
 	<body>
+		<div id="rmenu">
+			
+		</div>
 		<div id="mainarea">
 			<div id="toparea">
 				<div id="logoarea">
@@ -241,12 +249,21 @@
 			<div id="boxarea">
 				<div class="warea">
 					<img src="ist.jpg">
+					<div class="details">
+						image 1
+					</div>
 				</div>
 				<div class="warea">
 					<img src="ist.jpg">
+					<div class="details">
+						image 2
+					</div>
 				</div>
 				<div class="warea">
 					<img src="ist.jpg">
+					<div class="details">
+						image 3
+					</div>
 				</div>
 			</div>
 			<div id="footer">

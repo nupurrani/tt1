@@ -58,6 +58,31 @@
 					background:orange;
 					float:left;
 					}
+				/*#slide1 a:link{
+					color:black;
+					}
+				#slide1 a:visited{
+					color:white;
+					}
+				
+				#slide1 a:hover{
+					color:cyan;
+					}
+				#slide1 a:active{
+					color:yellow;
+					}*/
+				#slide1 a:link,#slide1 a:visited{
+					color:white;
+					border-radius:10px;
+					background:black;
+					padding:10px 25px;
+					text-decoration:none;
+					}
+				#slide1 a:hover{
+					color:black;
+					background:yellow;
+					}
+				
 				
 				#darea{
 					width:1200px;
@@ -125,18 +150,14 @@
 					margin:50px;
 					}*/
 				.warea{
-					width:280px;
-					height:130px;
+					width:100px;
+					height:0;
 					float:left;
 					margin:50px;
-					}
-				.warea img{
-					width:280px;
-					height:130px;
-					opacity:0.7;
-					}
-				.warea img:hover{
-					opacity:1;
+					border-top: solid 50px red;
+					border-right: solid 50px yellow;
+					border-bottom: solid 50px green;
+					border-left: solid 50px blue;
 					}
 				.bg3{
 					background:pink;
@@ -189,27 +210,19 @@
 					height:280px;
 					float:left;
 					margin:50px;
+					border: solid 10px black;
 					}
-				.zarea img{
-					width:187px;
-					height:275px;
-					opacity:0.7;
-					}
-				.zarea img:hover{
-					opacity:1;
-					}
-				
-				.bg00{
+				.bg7{
 					background:pink;
 					}
-				.bg22{
+				.bg8{
 					background:blue;
 					}
-				.bg33{
+				.bg9{
 					background:green;
 					}
-				.bg44{
-					background:white;
+				.bg10{
+					background:red;
 					}
 		</style>
 		
@@ -218,16 +231,17 @@
 		<div id="mainarea">
 			<div id="toparea">
 				<div id="logoarea">
-					<img src="logo.png">
+				<img src="logo.png">
 				</div>
 				<div id="titlearea">
-					<h1>Hello World</h1>
 				</div>
 			</div>
 			<div id="menuarea">
 			</div>
 			<div id="slidearea">
 				<div id="slide1">
+					<a href="https://www.google.com">google</a> |  
+					<a href="https://www.mpsckp.com">MPSCKP</a>
 				</div>
 			</div>
 			<div id="darea">
@@ -239,28 +253,21 @@
 				
 			</div>
 			<div id="boxarea">
-				<div class="warea">
-					<img src="ist.jpg">
+				<div class="warea ">
 				</div>
-				<div class="warea">
-					<img src="ist.jpg">
+				<div class="warea ">
 				</div>
-				<div class="warea">
-					<img src="ist.jpg">
+				<div class="warea ">
 				</div>
 			</div>
 			<div id="footer">
-				<div class="zarea">
-					<img src="images2.jpg">
+				<div id="footer1">
 				</div>
-				<div class="zarea">
-					<img src="images2.jpg">
+				<div id="footer2">
 				</div>
-				<div class="zarea">
-					<img src="images2.jpg">
+				<div id="footer3">
 				</div>
-				<div class="zarea">
-					<img src="images2.jpg">
+				<div id="footer4">
 				</div>
 			</div>
 		</div>
