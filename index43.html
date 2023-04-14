@@ -124,18 +124,29 @@
 					margin:70px 50px 10px 30px;
 					margin:50px;
 					}*/
-				.box{
+				.warea{
 					width:280px;
 					height:130px;
 					float:left;
 					margin:50px;
-					border: solid 10px transparent;
-					/*overflow:hidden;
-					overflow:scroll;
-					overflow:auto;*/
-					overflow-y:auto;
+					overflow:hidden;		
 					}
-				
+				.warea img{
+					width:280px;
+					height:130px;
+					/*transition-property:transform;
+					transition-duration:4s;
+					transition-delay:1s;*/
+					transition:transform 4s 1s;
+					}
+				.warea img:hover{
+					/*transform:rotate(-30deg);
+					transform:scale(0.8,0.8);
+					transform:translate(100,50px);
+					transform:translateY(-20px);
+					transform:skew(0,-30deg);*/
+					transform:rotate(10deg) scale(1.5,1.5);
+					}
 				.bg3{
 					background:pink;
 					}
@@ -183,11 +194,35 @@
 					margin:50px;
 					}*/
 				.zarea{
-					width:180px;
-					height:280px;
+					width:0px;
+					height:0px;
 					float:left;
 					margin:50px;
-					border: solid 10px black;
+					border-top: solid 50px red;
+					border-right: solid 50px yellow;
+					border-bottom: solid 50px green;
+					border-left: solid 50px blue;
+					}
+				.zarea img{
+					width:187px;
+					height:275px;
+					
+					}
+				.zarea img:hover{
+					border-radius:20px 0 0 0;
+					}
+				
+				.bg00{
+					background:red;
+					}
+				.bg22{
+					background:yellow;
+					}
+				.bg33{
+					background:green;
+					}
+				.bg44{
+					background:white;
 					}
 		</style>
 		
@@ -196,9 +231,10 @@
 		<div id="mainarea">
 			<div id="toparea">
 				<div id="logoarea">
-				<img src="logo.png">
+					<img src="logo.png">
 				</div>
 				<div id="titlearea">
+					<h1>Hello World</h1>
 				</div>
 			</div>
 			<div id="menuarea">
@@ -216,28 +252,28 @@
 				
 			</div>
 			<div id="boxarea">
-				<div class="box bg3">
-					<p>The prospectors C. M. Weld, Dorabji Tata and Shapurji Saklatvala took nearly three years in a painstaking search across vast stretches of inhospitable terrain to find a location for a steel plant. One day they came across Sakchi (present-day a business district), on the densely forested stretches of the Chota Nagpur plateau, near the confluence of the Subarnarekha and Kharkai rivers. It seemed to be the ideal choice and the place was selected.[19]
-					</p>
+				<div class="warea">
+					<img src="ist.jpg">
 				</div>
-				<div class="box bg4">
-					
-					<p>The prospectors C. M. Weld, Dorabji Tata and Shapurji Saklatvala took nearly three years in a painstaking search across vast stretches of inhospitable terrain to find a location for a steel plant. One day they came across Sakchi (present-day a business district), on the densely forested stretches of the Chota Nagpur plateau, near the confluence of the Subarnarekha and Kharkai rivers. It seemed to be the ideal choice and the place was selected.[19]</p>
-					</p>
+				<div class="warea">
+					<img src="ist.jpg">
 				</div>
-				<div class="box bg5">
-					<p>The prospectors C. M. Weld, Dorabji Tata and Shapurji Saklatvala took nearly three years in a painstaking search across vast stretches of inhospitable terrain to find a location for a steel plant. One day they came across Sakchi (present-day a business district), on the densely forested stretches of the Chota Nagpur plateau, near the confluence of the Subarnarekha and Kharkai rivers. It seemed to be the ideal choice and the place was selected.[19]</p>
-					</p>
+				<div class="warea">
+					<img src="ist.jpg">
 				</div>
 			</div>
 			<div id="footer">
-				<div id="footer1">
+				<div class="zarea">
+					
 				</div>
-				<div id="footer2">
+				<div class="zarea ">
+					
 				</div>
-				<div id="footer3">
+				<div class="zarea">
+					
 				</div>
-				<div id="footer4">
+				<div class="zarea">
+					
 				</div>
 			</div>
 		</div>
